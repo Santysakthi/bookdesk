@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book-des</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+    <div class="top-head">
+        <h1>BOOKS-KEEP</h1>
+    </div>
+    <div class="bookcontainer">
+        <div class="bookclass">
+            <h1>BOOK TITLE</h1>
+            <h3>AUTHER</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, qui quis maxime inventore accusamus
+                eligendi quaerat molestiae deserunt quasi necessitatibus beatae fugiat error sed aliquid ullam,
+                cupiditate saepe unde. Dolore.</p>
+            <button onclick="removebook(event)">remove</button>
+        </div>
+
+        <div class="addbookcontainer">
+            <button id="addbookcontent" type="button">+</button>
+        </div>
+    </div>
+    <div class="popupbox">
+        <div class="blackout">
+        </div>
+        <div class="bookname">
+            <h1>BOOK NAME</h1>
+            <form id="bookform">
+                <input type="text" id="booktitle" placeholder="Enter Book name" required>
+                <input type="text" name="" id="bookauther" placeholder="Enter Auther name" required>
+                <textarea name="" id="bookabout" placeholder="Book Description" required></textarea>
+                <button id="addbookname">ADD</button>
+                <button id="cancelpopup">CANCEL</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
